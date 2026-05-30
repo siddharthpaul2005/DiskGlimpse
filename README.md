@@ -45,14 +45,22 @@ disktree D:\ --top 50 --depth 5
 ## CLI Reference
 
 disktree [OPTIONS] [path]
-path                    Directory to scan (default: current directory)
--d, --depth INT         Tree display depth, 0 = unlimited (default: 3)
--n, --top INT           Number of top files/dirs to show (default: 20)
--s, --sort TEXT         Sort by: size|name|count|modified (default: size)
---min-size TEXT     Minimum file size, e.g. 1MB, 500KB
---ext TEXT          Filter by extension, e.g. .mp4
---export TEXT       Export format: json|csv
--o, --output TEXT       Output file path for export
+path                    
+Directory to scan (default: current directory)
+-d, --depth INT        
+Tree display depth, 0 = unlimited (default: 3)
+-n, --top INT           
+Number of top files/dirs to show (default: 20)
+-s, --sort TEXT         
+Sort by: size|name|count|modified (default: size)
+--min-size TEXT     
+Minimum file size, e.g. 1MB, 500KB
+--ext TEXT          
+Filter by extension, e.g. .mp4
+--export TEXT       
+Export format: json|csv
+-o, --output TEXT       
+Output file path for export
 --no-tree           Skip tree view
 --snapshot          Save snapshot for later diffing
 --diff TEXT         Diff against a saved snapshot
@@ -107,6 +115,7 @@ cmake --build --preset dev
 - [zstd](https://github.com/facebook/zstd) — compression
 
 ## Architecture
+
 disktree/
 ├── include/disktree/
 │   ├── core/          # Scanner, Builder, Index, models
