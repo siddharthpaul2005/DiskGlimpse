@@ -117,7 +117,7 @@ cmake --build --preset dev
 ## Architecture
 
 ```text
->>>>>>> 924a765 (Readme update)
+
 disktree/
 ├── include/disktree/
 │   ├── core/        # Scanner, Builder, Index, models
